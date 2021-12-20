@@ -5,19 +5,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CF1FB98-8CF5-40D3-B90A-5DA9E14E677F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>MyProjectBelhard</RootNamespace>
-    <AssemblyName>MyProjectBelhard</AssemblyName>
+    <ProjectGuid>{A6B50E59-E618-4B6C-998D-37800DB4F63D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProjectBelhard.Models</RootNamespace>
+    <AssemblyName>MyProjectBelhard.Models</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +26,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -53,23 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Model\LogIn.cs" />
-    <Compile Include="Classes\Model\Registration.cs" />
-    <Compile Include="Classes\UI\CommonDecor.cs" />
-    <Compile Include="Classes\UI\StartPage.cs" />
-    <Compile Include="Interfaces\ICommonDecorable.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="AppDbContext.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyProjectBelhard.Models\MyProjectBelhard.Models.csproj">
-      <Project>{a6b50e59-e618-4b6c-998d-37800db4f63d}</Project>
-      <Name>MyProjectBelhard.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

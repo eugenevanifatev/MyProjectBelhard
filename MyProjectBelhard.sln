@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProjectBelhard", "MyProjectBelhard\MyProjectBelhard.csproj", "{7CF1FB98-8CF5-40D3-B90A-5DA9E14E677F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProjectBelhard.Models", "MyProjectBelhard.Models\MyProjectBelhard.Models.csproj", "{A6B50E59-E618-4B6C-998D-37800DB4F63D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7CF1FB98-8CF5-40D3-B90A-5DA9E14E677F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF1FB98-8CF5-40D3-B90A-5DA9E14E677F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF1FB98-8CF5-40D3-B90A-5DA9E14E677F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B50E59-E618-4B6C-998D-37800DB4F63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B50E59-E618-4B6C-998D-37800DB4F63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B50E59-E618-4B6C-998D-37800DB4F63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B50E59-E618-4B6C-998D-37800DB4F63D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
